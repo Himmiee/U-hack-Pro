@@ -44,7 +44,7 @@ const Donation1 = () => {
   const handleSubmit = () => {
     //  e.stopPropagation()
 
-    fetch(`https://konect-api.herokuapp.com/ngo/getDonation/${DonSearch}`)
+    fetch(`https://konect-0iza.onrender.com/${DonSearch}`)
       .then((res) => {
         return res.json();
       })

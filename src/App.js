@@ -64,7 +64,8 @@ function App() {
           </div>
 
           <Routes>
-            <Route element={<ProtectedRoutes />}>
+            {/* <Route element={<ProtectedRoutes />}> */}
+            <Route >
               <Route path="/" element={<Home />}></Route>
               <Route path="/ngo" element={<Ngo />}>
                 <Route path="all" element={<NgoPart2 />}></Route>

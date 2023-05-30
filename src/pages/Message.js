@@ -22,7 +22,7 @@ const Message = () => {
   };
   const handleSubmit = () => {
     axios
-      .post("https://konect-auth-api.herokuapp.com/users/addMessage", {
+      .post("https://konect-auth.onrender.com/users/addMessage", {
         firstName,
         lastName,
         subject,

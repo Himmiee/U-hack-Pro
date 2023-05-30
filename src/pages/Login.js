@@ -25,14 +25,14 @@ const Login = () => {
     // axios.defaults.withCredentials=true;
     try {
       const response = await axios.post(
-        "https://konect-auth-api.herokuapp.com/users/login",
+        "https://konect-auth.onrender.com/users/login",
         {
           email: loginEmail,
           password: loginPassword,
         }
       );
       console.log(response.data);
-      setIsAuth(true);
+      // setIsAuth(true);
       navigate("/");
       document.documentElement.scrollTop = 0;
 
@@ -123,7 +123,7 @@ const Login = () => {
               bg="#1B1A42"
               pad="20px 0px"
             >
-              Log In
+              Sign In
             </CustomButton>
           </div>
         </form>

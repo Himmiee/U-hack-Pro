@@ -45,7 +45,7 @@ const NgoPart1 = () => {
     //  e.stopPropagation()
 
     fetch(
-      `https://konect-api.herokuapp.com/ngo/getDetailSector?tag=${NgoSearch}`
+      `https://konect-0iza.onrender.com/ngo/getDetailSector?tag=${NgoSearch}`
     )
       .then((res) => {
         return res.json();

@@ -28,7 +28,7 @@ const Volunteer = () => {
   const navigate = useNavigate();
   const handleSubmit = () => {
     axios
-      .post("https://konect-auth-api.herokuapp.com/users/addVolunteer", {
+      .post("https://konect-auth.onrender.com/users/addVolunteer", {
         firstName,
         lastName,
         phoneNumber,
@@ -57,7 +57,7 @@ const Volunteer = () => {
       });
 
     // axios
-    //   .post("https://konect-auth-api.herokuapp.com/users/addVolunteer", {
+    //   .post("https://konect-auth.onrender.com/users/addVolunteer", {
     //     firstName,
     //     lastName,
     //     phoneNumber,

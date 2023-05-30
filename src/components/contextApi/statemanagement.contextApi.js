@@ -37,7 +37,7 @@ const Context = ({ children }) => {
   const [user, setUser] = useState([]);
   useEffect(() => {
     setloading(true);
-    fetch("https://konect-api.herokuapp.com/ngo/getDetails")
+    fetch("https://konect-0iza.onrender.com/ngo/getDetails")
       .then((res) => {
         return res.json();
       })
@@ -53,7 +53,7 @@ const Context = ({ children }) => {
   }, []);
   useEffect(() => {
     setloading(true);
-    fetch("https://konect-api.herokuapp.com/ngo/getDonations")
+    fetch("https://konect-0iza.onrender.com/ngo/getDonations")
       .then((res) => {
         return res.json();
       })
@@ -70,7 +70,7 @@ const Context = ({ children }) => {
   }, []);
   useEffect(() => {
     axios
-      .get("https://konect-auth-api.herokuapp.com/users/findAllUsers")
+      .get("https://konect-auth.onrender.com/users/findAllUsers")
       .then((res) => {
         // console.log(res.data);
         setUser(res.data);

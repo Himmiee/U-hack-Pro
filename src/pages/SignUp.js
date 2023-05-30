@@ -24,7 +24,7 @@ const SignUp = () => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "https://konect-auth-api.herokuapp.com/users/register",
+        "https://konect-auth.onrender.com/users/register",
         {
           firstName,
           lastName,
